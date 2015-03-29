@@ -9,11 +9,11 @@ $ 	Return from subroutine
 * 	Multiply
 / 	Integer divide
 \ 	Remainder
- ? 	Display menu built from current string buffer
- ! 	Outputs current string buffer as text
+? 	Display menu built from current string buffer
+! 	Outputs current string buffer as text
 " 	Write string to string buffer. Special command: \# prints a number from the top of the stack
 <uppercase letter> 	Get variable address
- . 	Store variable
+. 	Store variable
 : 	Recall variable
 < 	Return 1 if Y < X; else return 0
 = 	Return 1 if Y = X; else return 0
@@ -36,5 +36,5 @@ Break"! ~ Writes a message with a line break.
 3 2 * A. ~ Means: A = 3 * 2
 X: Y: + 3 / Z. ~ Means: Z = (X + Y) / 3
 Z: 0 = [ "Okay"! 0] ~ Displays "Okay" if Z == 0
-3 A. A:[ "\#"! A: 1 - A. A:] ~ Means for (A = 3; A != 0; A--) { print(A); }
+3 A. A: [ "\#" ! A: 1 - A. A: ] ~ Means for (A = 3; A != 0; A--) { print(A); }
 r 6 \ 1 + "Random number: \#" ~ Print out "Random number: " and a random number between 1 and 6.
